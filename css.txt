@@ -1,0 +1,222 @@
+<p style="color: blue; background-color: aqua;">This tutorial will teach you everything you need to know </p>
+
+2nd method:  //Element selector 
+Inside head we will use style tag: 
+if you want that it will reflect the change in all the specific elements: 
+
+<title>CSS Tutorials</title>
+    <style>
+        p{
+            color:green;
+            background-color: yellow !important;
+        }
+        </style>
+
+3rd method: 
+style sheet using link tag in head:
+
+<title>CSS Tutorials</title>
+    <link rel="stylesheet" href="tut13.css"> // So inside the tut13.
+css we have prepare that it will color the paragraphs purple 
+so it will reflect it the entire paragraphs in the body. 
+
+!!!!IMP!!! 
+The last change in data will reflect in result. so if we do link and then style then style data will be reflected. 
+
+however, if we want to stick to specific tag we will use !important just like this way: 
+
+ <title>CSS Tutorials</title>
+    <style>
+        p{
+            color:green;
+            background-color: yellow !important;  // it will show result of this. 
+        }
+        </style>
+    <link rel="stylesheet" href="tut13.css">
+
+id selector: 
+we can change the tag style when we use id selector in head style just like: 
+
+#red{
+    color: red; 
+    } 
+
+in this the id having red will change the color to the red. 
+
+But for class we use .red instead of #red; 
+
+<style>
+        .classred{
+            color: red;
+        }
+        .classblue{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h3>CSS Selectors</h3>
+    <p id="red" class="classred classblue">Hello there</p> 
+    <p>There is anyone</p>
+</body>
+
+// as you can see that i have added two classes so i can have style of both the classes. 
+
+we can even change the span and footer as well just as this in head:
+span, footer{
+            color: pink;
+        } 
+it will change color to pink of both span and footer. 
+
+If we want to do border we can do this way in head: 
+
+ p{
+            border: 2px solid red;
+        }
+
+if you want to increase font size then we use font-size = npx (n) is a number. 
+if you want to increase the gap between lines then we use line-height: 5em. 
+
+For fonts wee can go like this as if we don't have a specific font we can use link tag and give fonts and write that name in family tag under ''. 
+	- if we have then we can use fonts-family in this lists of fonts are available in groups:
+
+ <title>New</title>
+<link href="https://fonts.googleapis.com/css2?family=&display=swap" rel="stylesheet">
+    <style>
+    
+        p{
+            font-family: 'Comfortaa', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 32px;
+            line-height: 5em;
+        }
+    </style>
+
+For colors we can do 3 ways: 
+
+ - simple using color key:
+ - using rgb(n,n,n) n is a no: 
+ - using hexadeci #ffffff (f can be alpha deci combination):
+
+For border: 
+we can use simple border 2px solid #color. 
+which indirectly is border width, border style, border color. 
+
+we can go for border top/bottom/left/right. 
+
+radius is how much curve it gets. 
+Same as above we can go for top-left-radius,top-right-radius,bottom-left-radius, bottom-right-radius. 
+
+Background image: 
+background-image: url('link'). 
+for no repetations use background-repeat: no-repeat. 
+
+for positions: 
+ 
+background-position: bottom right; down right. 
+background-position: center center; center.
+background-position: center right; center right.
+so there is center top and bottom and we can go for left and right. 
+to repeat at y-axis background-repeat: repeat-y; // similarly for x. 
+
+or we can go like 
+background-position: 10px 50px; which means x & y.
+
+Structure of data: 
+data->padding->border->margin
+padding: 5%;
+            padding: 10px 90px 100px 10px; /*top right bottom left*/
+            padding: 20px 20px; /* This is for top-bottom & left-right*/
+            padding-left: 10px; we can do padding-right/top/bottom. 
+            margin-top: 10px; we can do margin-right/top/bottom. 
+            margin: 40px; //we can do padding for same as well.
+
+to not get the change of the width in inspect (google) we can use: box-sizing: border-box; 
+
+TEXT: 
+	- if we can that text should be in center then we will use text-align: center; 
+
+float: 
+	- if we want that object/body should float in left side only then we will use :- float: left; 
+	- however, if we do width 50% of let say 2 body/object then the body will be in single line. 
+	- left float is not like the content will be in border left only. if there is a space in consecutive of body and that body width is 50% then it will attached that second body to the consecutive if second body is in 50% width other wise it will take it to the second line. 
+margin: 
+	- if we do margin: auto; then the entire body will be in center. 
+
+button tag:
+	- <button class="btn">Contact us</button>
+	// Automatically there is border in button we can remove it as well by border: none in stye tag; 
+
+feature called hover in style tag: 
+	- if we want that when cursor move on the hover body it changes the colorso we can use hover like this way: 
+	ex:
+	a:hover, button:hover {
+            color: rgb(31, 45, 173);
+        }
+	we can even change the background color as well: 
+	a:hover, button:hover {
+            color: rgb(31, 45, 173);
+            background-color: rgb(119, 79, 131);
+        }
+
+ // we want to use pointer whenever cursor move around button/link we use cusor: pointer in style tag; 
+ // whenever we use a tag by default there is underline to remove it we use text-decoration: none in style tag;
+
+a:visited: 
+	- purpose: to show visited website by changing color of link/button. 
+	- it is used to shown that you have visited a website by changing the color. 
+	- we can even change the background. 
+
+ // we can bold the font by using font-weight: bold in style tag;
+
+ // for input and not taking variable to store it will be like box and background we want that search items as default plane text use placeholder:   
+	- <input type="text" name="search" id="search" placeholder="Search items">
+
+ // list-style: none; is used to remove bullet from list. 
+ // overflow: auto; is used when float body gets out from parent and to overcome this issue we use this so that we can see the previous background. 
+ // to fix the size with the width we can use : box-sizing: border-box; so that whatever width is it will include margin & padding. 
+
+Postions: 
+	- By default block are static. 
+	- relative: means it leaves space to its normal positions. 
+	   ex: 
+	   position: relative;
+           top: 34px;
+	   
+           // Here it will space to its normal psitions where it was and according to above code it will gap 34px from top. 
+ 	   // Whenever we use absolute then it won't acquire any space to position. it just overlap. 
+	   // For ex: we have 4 block and 3 is relative then the block will be like: 1,2,4 & 3. so here 3 is overlap 4 and leave its postions.  
+	   
+ 	!!! New : if we want that even if we scroll and the block should not leave its position then we use: position: fixed; !!!
+
+	!!! New : if we want to adjust height of line then use line-height:100 px or whatever. !!! 
+
+	!!! New : if we want to hide body and want that space to be blank we use visibility: hidden;  !!! 
+        // connected to above: if we don't want to display and don't want to be blank use: display: none;  
+	
+ // z-index work only for all position except: static;  
+ // if we have layers in boxes and we have that this specific should be first then make that style body z-index: 1. 
+ // or we can use as the layer we want backward set that body z-index style to -1; 
+
+ // display: flex; is used to give flexibility to the body. by default is row; 
+ // if we want to change the direction then we use flex-direction: column; it will be in single column. 
+ // we can reverse column and row as well. by column/row-reverse;
+ // disadvantage : if reduce the size of screen and it is row it is not like block goes downward to adjust the screen. to overcome we use flex-wrap. 
+ // flex-wrap: wrap; is used to gives adjustment as screen goes. to reverse wrap use flex-wrap: wrap-reverse; 
+ // to do wrap and directions as well we use : flex-flow: wrap row; // this will wrap and in direction row. 
+ // we want that when border gets increases the block should be in center use : justify-content: center; // only from left and right 
+ // we want space equally divided in between block only not for start and end position use : justify-content: space-between; // // only from left and right 
+ // if we want in start and end positions use : justify-content: space-evenly; // only from left and right 
+ // if we want each block have equal margin in left and right use: justify-content: space-around; NOTE: each block have equal left and right margin. so, starting and ending have less space than between block because first lock have right margin and consecutive block have left margin to equal that there is space in between more than start and end. 
+ 
+ !!! New: if we want to center vertically use : align-items: center; // center from top and bottom. !!!
+
+ // Equally distribute in bottom use : align-items: flex-end;
+ // if we want that when we stretch the screen and a single block to increase size more than others in left and right side use : flex-grow: 1; 
+ // same way if we want to shrink use: flex-grow: 2;
+ // when flex-direction is set to row flex-basis: will control width
+ // when flex-direction is set to column flex-basis: will control height
+ // shorcut: flex: 2 2 230px; first grow, shrink, basis. 
+ // align self: flex-start; it will put block in where it was if changed. 
+ // align-self: flex-end it will put it to bottom. 
+ // align-self: center it will put block in center. 
+ 

@@ -1,0 +1,149 @@
+head - it is used to do with tab name 
+
+body - this is what it will be shown in website. 
+
+h - headings upto h6 
+
+p - paragraph //For each new tag there is always a new line. To overcome this situations we use span for continuous line even if we use new tag of span. 
+
+p*3 = it will open 3 p code 3 times. 
+
+inside p tag lorem_n (n = 1,2,3) - random words 
+
+b/strong - bold 
+i/em - italic 
+
+br(no closing tag used) - new line 
+
+a - is used to open any existing website
+ - ex :  <a href="https://www.google.com">Go to google</a>
+if you want that whenever you click that link it open in new tab so use: 
+ - target="_blank" 
+ - <a href="https://www.google.com"target="_blank">Go to google</a>
+
+if you want to open your html file in website so do / and you will get options: 
+ - <a href="/tut4.html"target="_blank">tutorial 4</a>
+
+ul is used to make some markings and inside that we use li for line 
+inside ul/ol you can so some other markings as well such as circle, much more. 
+ - <ul type="circle">
+        <li>This is my list item</li>
+   </ul>
+
+For tables: 
+ - table tag inside that we use thread tag and inside that we use tr tag and inside that we use th tag: 
+ - thread for headings of table which is in bold. 
+ - tr is used for row 
+ - th data 
+ - However, in data side of table instead of thread we use body and instead of instead of th we use td. 
+Ex: 
+<table>
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>age</th>
+                <th>number</th>
+            </tr>
+        </thead>
+
+        <body>
+            <tr>
+                <td>Divy</td>
+                <td>21</td>
+                <td>7041</td>
+            </tr>
+	</body>
+</table>
+
+For form: 
+ - use form tag and inside that we can use input tag and inside that there are many types such as date, email, number, 
+   text, radio, checkbox, textarea, select inside select we use options tags and inside that we can choose which we want to be selected as default. 
+<form action="">
+  <div>
+            <label for="car">Car: </label>
+            <select name="myCar" id="car">
+                <option value="Indi" >Indigo</option>
+                <option value="Indi" selected>swift</option>
+            </select>
+
+        </div>
+        <div>
+            Write about yourself: <br><textarea name="myText" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="myEmail">
+        </div>
+        <br>
+        <div>
+            Date: <input type="date" name="mydate">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="myEmail">
+        </div>
+	<div>
+            are you eligible: <input type="checkbox" name="" id="" checked> //checked means by default it will be checked marked. 
+        </div>
+        <div>
+            Check: Male <input type="radio" name="myEmail" >  Female <input type="radio" name="myEmail">
+        </div>
+        <div>
+            <input type="submit" value="submit now">
+            <input type="reset" value="Reset Now">
+        </div>
+        
+    </form>
+
+ - there is also a reset tag inside input where we don't need any input name same in submit. 
+	<div>
+            <input type="submit" value="submit now">
+            <input type="reset" value="Reset Now">
+        </div>
+
+ - label tag is used to when you click on label you directly go to typing stage of text. 
+
+<label for="name">Name</label>
+        <div>
+            <input type="text" name="myName" id="name">
+        </div>
+
+if you want to to do border than we have to use style inside anything like a , span, p tag: 
+
+<a style="border: 2px solid green;">
+    this is new
+    <a style="border: 2px solid red;">This is paragraphs</a>
+    <span style="border: 2px solid blue;">this is span</span>
+    <span>This is also span</span>
+    </a>
+
+Class is for giving a properties to many elements. So, a class can have many elements and elements can have many class. 
+id is used to recognize any element. There can be only single id to any element. There shouldn't be any duplicates.  
+
+span.class will give span with  class. 
+ex: 
+<span class="class"></span>
+
+span#id_name will give span with id for ex i have wrote span#main. 
+<span class="" id="main"></span>
+
+div.redBg.blackborder.anotherclass: 
+This will give me something like this - <div class="redBg blackborder anotherclass"></div>
+
+same as above: 
+span.myclass.myclass2.myclass3: 
+<span class="mtclass myclass2 myclass3"></span>
+
+&nbsp; - will give space as if you write <p> this is   para </p> then this extra spaces won't be allowed in order to do so we have to use nbsp;. 
+
+there are multiple ways to write some marking:
+
+&lt - it will give < marking. 
+&gt - it will give > marking.
+&pound - it will give something like this £
+&copy - it will give me something like this © 
+
+detail tag is used to give and expand options. So, if you click on arrow it will expand the content. 
+Inside details there is also a summary tag. In that we can show the content and with that we can expand it. 
+And after the summary tag whatever content is there it will be shown when expand. 
+
